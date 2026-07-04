@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Skill Safety Auditor"
+  short_description: "Audit agent skills and plugin packages for unsafe behavior."
+  default_prompt: "Use $agent-skill-safety-auditor to audit this skill or plugin package before installing or publishing it."
