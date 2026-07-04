@@ -1,0 +1,18 @@
+{
+  "name": "agent-revenue-skills",
+  "version": "0.1.0",
+  "description": "Read-only agent workflow skills for auditing third-party skills/plugins and improving bounty PR workflows.",
+  "author": {
+    "name": "zxh920310-cpu"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agent Revenue Skills",
+    "shortDescription": "Audit agent packages and prepare safer bounty workflows.",
+    "longDescription": "Agent Revenue Skills provides read-only workflows for AI agent package safety review, GitHub bounty triage, and maintainer-friendly PR packaging. The initial MVP includes an agent skill safety auditor.",
+    "developerName": "zxh920310-cpu",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use Agent Revenue Skills to audit this skill or plugin package before installing or publishing it."
+  }
+}
