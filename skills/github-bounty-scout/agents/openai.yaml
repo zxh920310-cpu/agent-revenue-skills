@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Bounty Scout"
+  short_description: "Find and score safer GitHub bounty or OSS PR tasks."
+  default_prompt: "Use $github-bounty-scout to find small GitHub bounty tasks and reject unsafe or duplicated work."
