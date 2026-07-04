@@ -1,0 +1,4 @@
+interface:
+  display_name: "PR Acceptance Packager"
+  short_description: "Package bounty and OSS changes into maintainer-friendly PRs."
+  default_prompt: "Use $pr-acceptance-packager to prepare this implemented change for a clean GitHub pull request."
