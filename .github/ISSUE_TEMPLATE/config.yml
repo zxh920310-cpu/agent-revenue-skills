@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Public repository
+    url: https://github.com/zxh920310-cpu/agent-revenue-skills
+    about: Use public issues only for non-sensitive requests.

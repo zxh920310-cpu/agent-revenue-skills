@@ -1,0 +1,45 @@
+name: Bounty triage request
+description: Request a conservative review of a public GitHub bounty or open-source issue before implementation.
+title: "[Triage] "
+labels:
+  - bounty-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Public GitHub issues only. Do not include private data, payment instructions, wallet addresses, identity details, API keys, or external platform credentials.
+  - type: input
+    id: issue_url
+    attributes:
+      label: Public issue or bounty URL
+      description: Link to the GitHub issue, pull request, or public bounty page to evaluate.
+      placeholder: https://github.com/owner/repo/issues/123
+    validations:
+      required: true
+  - type: input
+    id: expected_reward
+    attributes:
+      label: Expected reward
+      description: Include the visible amount and currency, if any.
+      placeholder: $20-$50, $100, unknown, non-cash, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Paste or summarize the public acceptance criteria.
+      placeholder: What change is required for the bounty or issue to be accepted?
+    validations:
+      required: true
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Requested triage boundaries
+      options:
+        - label: Prefer small documentation, test, example, setup, or focused bug-fix work.
+          required: true
+        - label: Reject tasks requiring payment setup, wallet details, identity checks, API keys, external signup, or private data.
+          required: true
+        - label: Check whether matching pull requests or claims already exist before recommending implementation.
+          required: true
