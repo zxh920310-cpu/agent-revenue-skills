@@ -1,0 +1,47 @@
+name: Skill or plugin safety audit
+description: Request a read-only audit of a public agent skill, Codex plugin, MCP config, hook, or bundled script.
+title: "[Audit] "
+labels:
+  - audit-request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Public requests only. Do not include secrets, API keys, cookies, credentials, customer data, payment details, wallet addresses, identity documents, or private files.
+  - type: input
+    id: target
+    attributes:
+      label: Public target URL
+      description: Link to the public repository, release, folder, or file to audit.
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: dropdown
+    id: target_type
+    attributes:
+      label: Target type
+      options:
+        - Codex skill
+        - Codex plugin
+        - MCP server or config
+        - Hook script
+        - Other public agent package
+    validations:
+      required: true
+  - type: textarea
+    id: concerns
+    attributes:
+      label: What should be checked?
+      description: Mention the specific installation, runtime, network, file, or secret-handling concerns.
+      placeholder: Check whether this package reads secrets, uploads files, installs dependencies unsafely, or runs hidden commands.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Safety confirmation
+      options:
+        - label: This issue contains only public, non-sensitive information.
+          required: true
+        - label: I understand this repository does not collect payment, wallet, tax, identity, or private account information.
+          required: true
