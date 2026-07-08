@@ -15,6 +15,8 @@ Use the repository issue templates to request one of two GitHub-native workflows
 - Skill/plugin safety audit: read-only review of a public agent skill, Codex plugin, MCP config, hook, or bundled script.
 - Bounty triage: conservative review of a public GitHub issue or bounty candidate before spending implementation time.
 
+See [request examples](docs/request-examples.md) for good public inputs and the expected output shape.
+
 Do not include secrets, API keys, cookies, customer data, payment details, wallet addresses, identity documents, or private business files in issues. This repository is a public lead-capture and workflow demo surface only; payment, sponsorship, identity, tax, and external marketplace setup are intentionally not configured here.
 
 ## Safety posture
